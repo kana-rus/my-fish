@@ -1,6 +1,6 @@
 function cargo-srcincrement
-    if ls | grep -qx Cargo.toml
-        set prev_name_line (tail ./Cargo.toml -n 2 | grep name)
+    if test "$(basename $PWD)" = "src" #ls | grep -qx Cargo.toml
+        set prev_name_line (tail ../Cargo.toml -n 2 | grep name)
         set prev_name_info (string split \" $prev_name_line)
         set prev_number $prev_name_info[2]
 
@@ -16,12 +16,12 @@ function cargo-srcincrement
             return 1
         end
 
-        touch ./src/$next_number.rs
+        touch ./$next_number.rs
         echo "[[bin]]
 name = \"$next_number\"
-path = \"src/$next_number.rs\"" >> ./Cargo.toml
+path = \"src/$next_number.rs\"" >> ../Cargo.toml
 
-        if test "$(basename $PWD)" = "learn_compiler"
+        if test "$PWD" = "/home/kanarus/learn_compiler/src"
             echo "mod utils; use utils::*;
 
 fn parse(mut tokens: std::collections::vec_deque::IntoIter<Token>) -> Tree {
@@ -37,11 +37,11 @@ fn evaluate(tree: Tree) -> Int {
 
 fn main() { /* printing debug */
 
-}" >> ./src/$next_number.rs
+}" >> ./$next_number.rs
         end
 
     else
-        echo "error: use in Rust project's root directory."
+        echo "error: use in Rust project's src directory."
         return 1
     end
 end
