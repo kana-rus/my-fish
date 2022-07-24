@@ -1,5 +1,5 @@
 function cargo-srcincrement
-    if ls | grep -qx Cargo.toml #test "$(basename $PWD)" = "src"
+    if ls | grep -qx Cargo.toml
         set prev_name_line (tail ./Cargo.toml -n 2 | grep name)
         set prev_name_info (string split \" $prev_name_line)
         set prev_number $prev_name_info[2]
@@ -11,6 +11,9 @@ function cargo-srcincrement
             set next_number "0$next_number_raw"
         else if test "$next_number_raw" -lt 1000
             set next_number "$next_number_raw"
+        else
+            echo "N >= 1000 is not supprted"
+            return 1
         end
 
         touch ./src/$next_number.rs
