@@ -24,12 +24,14 @@ path = \"src/$next_number.rs\"" >> ../Cargo.toml
         if test "$PWD" = "/home/kanarus/learn_compiler/src"
             echo "mod utils; use utils::*;
 
-fn parse(mut tokens: std::collections::vec_deque::IntoIter<Token>) -> Tree {
+impl Process for Parser {
+    fn parse(mut tokens: std::collections::vec_deque::IntoIter<Token>) -> Tree {
+        
+    }
 
-}
-
-fn evaluate(tree: Tree) -> Int {
-
+    fn evaluate(tree: Tree) -> Int {
+        
+    }
 }
 
 
