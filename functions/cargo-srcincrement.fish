@@ -24,7 +24,13 @@ path = \"src/$next_number.rs\"" >> ./Cargo.toml
         if test "$(basename $PWD)" = "learn_compiler"
             echo "mod utils; use utils::*;
 
+fn parse(mut tokens: std::collections::vec_deque::IntoIter<Token>) -> Tree {
 
+}
+
+fn evaluate(tree: Tree) -> Int {
+
+}
 
 
 
