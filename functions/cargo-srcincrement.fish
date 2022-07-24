@@ -32,10 +32,6 @@ impl Process for Parser {
     fn parse(mut tokens: std::collections::vec_deque::IntoIter<Token>) -> Tree {
         
     }
-
-    fn evaluate(tree: Tree) -> Int {
-        
-    }
 }
 
 
