@@ -22,17 +22,11 @@ name = \"$next_number\"
 path = \"src/$next_number.rs\"" >> ../Cargo.toml
 
         if test "$PWD" = "/home/kanarus/learn_compiler/src"
-            echo "mod utils; use utils::*;
+            echo "
 
 /* STEP.$next_number_raw
  * expr ::= 
  */
-
-impl Process for Parser {
-    fn parse(mut tokens: std::collections::vec_deque::IntoIter<Token>) -> Tree {
-        
-    }
-}
 
 
 
