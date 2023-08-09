@@ -12,8 +12,15 @@ SETUVAR Z_DATA:/home/kanarus/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/kanarus/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/kanarus\x24
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_com:git\x20add\x20\x2e\x20\x26\x26\x20git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_n:nvim
+SETUVAR _fish_abbr_c:code
 SETUVAR _fish_abbr_nconf:/home/kanarus/\x2econfig/nvim
+SETUVAR _fish_abbr_p:/home/kanarus/projects/
+SETUVAR _fish_abbr_push:git\x20push\x20origin
+SETUVAR _fish_abbr_apt:sudo\x20apt
+SETUVAR _fish_abbr_dc:docker\x20compose
+SETUVAR _fish_abbr_pip:pip3
 SETUVAR _fisher_jethrokuan_2F_fzf_files:\x7e/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_open\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
